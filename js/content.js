@@ -9,6 +9,7 @@ class Content {
             + '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
             + '<meta http-equiv="X-UA-Compatible" content="ie=edge">'
             + "<title>Házi</title></head>");
+        res.write("<form style='font-family: Courier; font-size:16px; background-color: LightGray;'>");
         res.write("<body>");
         const query = url.parse(req.url, true).query;
         const xKezd = query.x === undefined ? "1" : query.x;
@@ -17,11 +18,10 @@ class Content {
         let x = parseInt(xKezd, 10);
         res.write("<h1>Szelekció (elágazás)</h1>");
         res.write("<h3>Az egyágú elágazás</h3>");
-        // res.write("<p>x értéke = " +
-        //     "<input type = 'number' name='x' " +
-        //     "style= 'font-family:Courier; font-size: inherit; background-color: LightBlue;'" +
-        //     `value='${x}' onChange = 'this.form.submit();'><br>`);
-        res.write('<input type="text" name="x" value="1" onChange = "this.form.submit()"><br>');
+        res.write("<p>x értéke = " +
+            "<input type = 'number' name='x' " +
+            "style= 'font-family:Courier; font-size: inherit; background-color: LightBlue;'" +
+            `value='${x}' onChange = 'this.form.submit();'><br>`);
         res.write("Szám abszolút értéke<br>"
             + `</p>`);
         if (x < 0) {
@@ -67,6 +67,7 @@ class Content {
                 res.write("Nem osztályzat!<br>");
                 break;
         }
+        res.write("</form>");
         res.end("</body></html>");
         res.end();
     }
