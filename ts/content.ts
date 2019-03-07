@@ -55,8 +55,7 @@ export default class Content {
             case 5: res.write("Jeles<br>"); break;
             default: res.write("Nem osztályzat!<br>"); break;
         }
-        res.write("</form>");
-        res.end("</body></html>");
+        res.end("</form></body></html>");
         res.end();
     }
 }
