@@ -29,7 +29,7 @@ export default class Content {
             `value='${x}' onChange = 'this.form.submit();'><br>`);
         res.write("Szám abszolút értéke<br>"
             + `</p>`);
-        if (x < 0) { x = -x }
+        if (x < 0) { x = - x; }
         res.write(`|x| = ${x}`);
 
         res.write("<h3>A kétágú elágazás</h3>");
