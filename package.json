@@ -1,7 +1,7 @@
 {
-  "name": "jedlik-typescript-vscode-template",
+  "name": "csharp_vs_typescript_elagazas",
   "version": "1.0.0",
-  "description": "Ts001 Basyc Types",
+  "description": "Ts001 Home work",
   "engines": {
     "node": "11.x"
   },
@@ -18,7 +18,7 @@
     "compile": "%APPDATA%/npm/tsc",
     "nodemon": "%APPDATA%/npm/nodemon --inspect -q ./js/app.js"
   },
-  "author": "Nits László",
+  "author": "Laposa Dániel",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^11.9.4"
