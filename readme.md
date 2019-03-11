@@ -6,3 +6,4 @@ csharp_minimum.pdf 10.2 Szelekció (elágazás) példák megírása TypeScript-b
 Bekérés bedolgozása a programba.
 
 Hali
+Hali hali
