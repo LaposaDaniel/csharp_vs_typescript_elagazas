@@ -4,3 +4,5 @@ csharp_minimum.pdf 10.2 Szelekció (elágazás) példák megírása TypeScript-b
 
 <h2>Bekérés</h2>
 Bekérés bedolgozása a programba.
+
+Hali
